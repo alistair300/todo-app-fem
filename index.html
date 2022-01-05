@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header>
+        <h1 class="logo">Todo</h1>
+        <div id="theme-toggle" class="theme-image"></div>
+      </header>
+
+      <!-- main -->
+      <main>
+        <!-- input -->
+        <section class="input-container">
+          <div class="check-box"></div>
+          <input
+            type="text"
+            name=""
+            id="todo-input"
+            placeholder="Create a new todo"
+          />
+        </section>
+
+        <!-- todo -->
+        <section class="todo-container">
+          <div id="todo-list" class="todo-list">
+            <div class="todo-item">
+              <div class="check-box">
+                <img src="./images/icon-check.svg" alt="" />
+              </div>
+              <p class="todo-text">Complete online JavaScript Course</p>
+              <div class="todo-remove">
+                <img src="./images/icon-cross.svg" alt="" />
+              </div>
+            </div>
+            <div class="todo-item">
+              <div class="check-box">
+                <img src="./images/icon-check.svg" alt="" />
+              </div>
+              <p class="todo-text">Learn</p>
+              <div class="todo-remove">
+                <img src="./images/icon-cross.svg" alt="" />
+              </div>
+            </div>
+            <div class="todo-item">
+              <div class="check-box">
+                <img src="./images/icon-check.svg" alt="" />
+              </div>
+              <p class="todo-text">Lorem, ipsum dolor.</p>
+              <div class="todo-remove">
+                <img src="./images/icon-cross.svg" alt="" />
+              </div>
+            </div>
+            <div class="todo-item">
+              <div class="check-box">
+                <img src="./images/icon-check.svg" alt="" />
+              </div>
+              <p class="todo-text">Accusamus animi ratione maiores fuga.</p>
+              <div class="todo-remove">
+                <img src="./images/icon-cross.svg" alt="" />
+              </div>
+            </div>
+            <div class="todo-item">
+              <div class="check-box">
+                <img src="./images/icon-check.svg" alt="" />
+              </div>
+              <p class="todo-text">Lorem, ipsum dolor.</p>
+              <div class="todo-remove">
+                <img src="./images/icon-cross.svg" alt="" />
+              </div>
+            </div>
+            <div class="todo-item">
+              <div class="check-box">
+                <img src="./images/icon-check.svg" alt="" />
+              </div>
+              <p class="todo-text">Corporis, cupiditate</p>
+              <div class="todo-remove">
+                <img src="./images/icon-cross.svg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- info -->
+          <div class="todo-info">
+            <small><span id="todo-left"></span> items left</small>
+            <button class="btn-clear">Clear Completed</button>
+          </div>
+
+          <!-- filters -->
+          <div class="todo-filters">
+            <button data-filter="all" class="todo-filter active">All</button>
+            <button data-filter="active" class="todo-filter">Active</button>
+            <button data-filter="completed" class="todo-filter">
+              Completed
+            </button>
+          </div>
+        </section>
+      </main>
+
+    <script src="./src/script.js"></script>
+  </body>
+</html>
